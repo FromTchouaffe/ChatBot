@@ -1,0 +1,170 @@
+version: "3.1"
+nlu:
+- intent: saluer
+  examples: |
+    - bonjour
+    - salut
+    - coucou
+    - bonsoir
+    - bonne matinée
+    - bonne soirée
+
+- intent: au_revoir
+  examples: |
+    - au revoir
+    - à bientôt
+    - à plus tard
+    - prends soin de toi
+    - bye
+
+- intent: réservation_vol
+  examples: |
+    - Je veux réserver un vol pour [Paris](destination)
+    - Comment puis-je réserver un billet d'avion pour [Londres](destination) ?
+    - Je cherche un vol pour [Londres](destination)
+    - Réservez-moi un vol pour [Tokyo](destination)
+    - Quels sont les vols disponibles pour [New York](destination) ?
+    - Je veux acheter un billet pour [Berlin](destination)
+
+
+- intent: réservation_hôtel
+  examples: |
+    - Je cherche un hôtel à [Madrid](lieu)
+    - Pouvez-vous réserver un hôtel pour moi ?
+    - Trouve-moi un hébergement à [Paris](lieu)
+    - Où puis-je séjourner à [Rome](lieu) ?
+    - Je voudrais réserver un hôtel à proximité du centre-ville
+
+
+- intent: demande_itinéraire
+  examples: |
+    - Quel est l'itinéraire pour aller à [Barcelone](destination) ?
+    - Comment puis-je me rendre à [l'aéroport](lieu) ?
+    - Quel est le chemin pour aller à [Lyon](destination) ?
+    - Pouvez-vous m'indiquer l'itinéraire pour le [musée](lieu) ?
+    - Comment arriver à mon [hôtel](lieu) depuis la gare ?
+
+
+- intent: localisation
+  examples: |
+    - Où se trouve [Yaoundé](lieu) ?
+    - Où est [l'aéroport Charles de Gaulle](lieu) ?
+    - Quelle est la capitale de [l'Espagne](pays) ?
+    - Où est située [la gare](lieu) ?
+    - Où se trouve mon [hôtel](lieu) ?
+
+
+- intent: transport
+  examples: |
+    - Je voudrais louer une voiture
+    - Comment puis-je réserver un taxi ?
+    - Y a-t-il des bus pour l'aéroport ?
+    - Quel est le meilleur moyen de transport pour aller à la plage ?
+    - Est-ce qu'il y a des trains pour Marseille ?
+
+- intent: confirmation_réservation
+  examples: |
+    - Mon vol a-t-il été confirmé ?
+    - Pouvez-vous vérifier ma réservation d'hôtel ?
+    - Ma réservation est-elle confirmée ?
+    - Où puis-je voir ma confirmation de vol ?
+    - J'ai besoin de vérifier ma réservation
+
+- intent: annulation_réservation
+  examples: |
+    - Je souhaite annuler ma réservation d'hôtel
+    - Comment puis-je annuler mon vol ?
+    - Pouvez-vous annuler ma réservation ?
+    - Je dois annuler mon billet d'avion
+    - Je veux annuler mon voyage
+
+- intent: demande_informations_voyage
+  examples: |
+    - Pouvez-vous me donner des informations sur [Paris](lieu) ?
+    - Quels sont les meilleurs endroits à visiter à [Londres](lieu) ?
+    - Donnez-moi des détails sur les attractions touristiques de [Rome](lieu)
+    - Quels sont les meilleurs restaurants à proximité ?
+    - Que faire à [Barcelone](lieu) pendant une semaine ?
+
+
+- intent: météo
+  examples: |
+    - Quel temps fera-t-il à [Tokyo](lieu) demain ?
+    - Y aura-t-il du soleil à [New York](lieu) cette semaine ?
+    - Quelle est la température à [Los Angeles](lieu) en ce moment ?
+    - Va-t-il pleuvoir à [Berlin](lieu) ?
+    - Quelle est la prévision météo pour [Paris](lieu) ?
+
+
+- intent: heure_depart_vol
+  examples: |
+    - À quelle heure est mon vol pour [Londres](destination) ?
+    - Quand dois-je arriver à [l'aéroport](lieu) ?
+    - Quel est l'horaire de mon vol pour [New York](destination) ?
+    - Mon vol pour [Tokyo](destination) décolle-t-il à l'heure ?
+    - À quelle heure dois-je embarquer ?
+
+
+- intent: demande_visas
+  examples: |
+    - Ai-je besoin d'un visa pour aller au [Canada](pays) ?
+    - Quelles sont les formalités de visa pour les [États-Unis](pays) ?
+    - Comment obtenir un visa pour [l'Australie](pays) ?
+    - Ai-je besoin d'un visa pour un séjour en [Chine](pays) ?
+    - Comment puis-je postuler pour un visa pour [l'Inde](pays) ?
+
+
+- intent: demande_frais_voyage
+  examples: |
+    - Combien coûte un billet pour [Barcelone](destination) ?
+    - Quel est le prix d'un vol pour [Tokyo](destination) ?
+    - Quels sont les tarifs des hôtels à [Rome](lieu) ?
+    - Combien vais-je dépenser pour un séjour à [New York](destination) ?
+    - Quels sont les frais de bagages pour un vol vers [Paris](destination) ?
+
+
+- intent: demande_conseils_sécurité
+  examples: |
+    - Est-il sûr de voyager à [Mexico](lieu) en ce moment ?
+    - Quels sont les conseils de sécurité pour voyager en [Égypte](pays) ?
+    - Est-il sûr de voyager seul au [Japon](pays) ?
+    - Y a-t-il des restrictions de voyage pour [l'Espagne](pays) ?
+    - Où puis-je trouver des informations sur la sécurité à [Paris](lieu) ?
+
+
+- intent: demande_assurance_voyage
+  examples: |
+    - Ai-je besoin d'une assurance voyage pour aller en [Australie](pays) ?
+    - Quels types d'assurance voyage recommandez-vous ?
+    - Comment puis-je souscrire une assurance voyage pour [le Canada](pays) ?
+    - Quels sont les avantages de l'assurance voyage ?
+    - Où puis-je acheter une assurance voyage pour [l'Europe](pays) ?
+
+
+- intent: demande_conseils_pourboires
+  examples: |
+    - Combien de pourboires dois-je laisser au restaurant en [France](pays) ?
+    - Est-ce que les pourboires sont obligatoires aux [États-Unis](pays) ?
+    - Quel est le montant habituel des pourboires au [Mexique](pays) ?
+    - Dois-je laisser un pourboire dans les taxis à [Londres](lieu) ?
+    - Quelle est la coutume des pourboires au [Japon](pays) ?
+
+
+- intent: demande_recommandations_restaurant
+  examples: |
+    - Pouvez-vous me recommander un bon restaurant à [Paris](lieu) ?
+    - Où puis-je manger à [Londres](lieu) ?
+    - Quel est le meilleur restaurant près de mon [hôtel](lieu) ?
+    - Quels sont les restaurants recommandés à [Rome](lieu) ?
+    - Où puis-je trouver un restaurant de fruits de mer à [Barcelone](lieu) ?
+
+
+- intent: décalage_horaire
+  examples: |
+    - Quel est le décalage horaire entre [Paris](lieu) et [Tokyo](lieu) ?
+    - Quelle heure est-il à [Londres](lieu) en ce moment ?
+    - Combien d'heures de différence entre [New York](lieu) et [Paris](lieu) ?
+    - Dois-je ajuster ma montre pour le décalage horaire en [Australie](pays) ?
+    - Quel est le fuseau horaire de [Los Angeles](lieu) ?
+
+

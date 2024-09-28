@@ -1,0 +1,36 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-destination",
+      "2": "I-destination",
+      "3": "L-destination",
+      "4": "U-destination",
+      "5": "B-lieu",
+      "6": "I-lieu",
+      "7": "L-lieu",
+      "8": "U-lieu",
+      "9": "B-pays",
+      "10": "I-pays",
+      "11": "L-pays",
+      "12": "U-pays",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-destination": 1,
+      "I-destination": 2,
+      "L-destination": 3,
+      "U-destination": 4,
+      "B-lieu": 5,
+      "I-lieu": 6,
+      "L-lieu": 7,
+      "U-lieu": 8,
+      "B-pays": 9,
+      "I-pays": 10,
+      "L-pays": 11,
+      "U-pays": 12,
+      "O": 0
+    },
+    "num_tags": 13
+  }
+]

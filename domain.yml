@@ -1,0 +1,39 @@
+version: "3.1"
+
+intents:
+  - saluer
+  - au_revoir
+  - réservation_vol
+  - réservation_hôtel
+  - demande_itinéraire
+  - localisation
+  - transport
+  - confirmation_réservation
+  - annulation_réservation
+  - demande_informations_voyage
+  - météo
+  - heure_depart_vol
+  - demande_visas
+  - demande_frais_voyage
+  - demande_conseils_sécurité
+  - demande_assurance_voyage
+  - demande_conseils_pourboires
+  - demande_recommandations_restaurant
+  - décalage_horaire
+
+responses:
+  utter_saluer:
+    - text: "Bonjour! Comment puis-je vous aider aujourd'hui?"
+  utter_au_revoir:
+    - text: "Au revoir! À bientôt."
+  utter_demande_itinéraire:
+    - text: "Je peux vous aider à trouver un itinéraire. Où souhaitez-vous aller?"
+
+entities:
+  - lieu
+
+actions:
+  - utter_saluer
+  - utter_au_revoir
+  - utter_demande_itinéraire
+

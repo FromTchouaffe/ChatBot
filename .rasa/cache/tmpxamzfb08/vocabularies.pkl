@@ -1,0 +1,1 @@
+{"text": {"bonjour": 2, "salut": 12, "coucou": 6, "bonsoir": 4, "bonne": 3, "matin\u00e9e": 8, "soir\u00e9e": 14, "au": 0, "revoir": 11, "\u00e0": 17, "bient\u00f4t": 1, "plus": 9, "tard": 15, "prends": 10, "soin": 13, "de": 7, "toi": 16, "bye": 5}, "intent": {"saluer": 1, "au_revoir": 0}, "response": null, "action_name": null, "action_text": null, "intent_response_key": null}
